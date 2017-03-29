@@ -9,8 +9,8 @@ class Chore < ApplicationRecord
   )
 enum repeat_type: REPEAT_TYPES
 
-  has_many :todos
-  has_many :users
+  has_many :to_dos
+  has_many :users, through: :to_dos
 
   validates :name, presence: true
   validates :description, presence: true
