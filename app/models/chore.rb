@@ -1,6 +1,6 @@
 class Chore < ApplicationRecord
 
-  REPEAT_TYPE = %w(
+  REPEAT_TYPES = %w(
     Daily
     Weekly
     Monthly
